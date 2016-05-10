@@ -28,10 +28,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 	  --things-tight-padding:{padding:7px;};
 	  --things-loose-padding:{padding:30px;};
 
+
 	  /* color style */
 	  --things-primary-background-color: #386da3;
 	  --things-secondary-background-color: #49a8df;
+	  --things-focus-background-color: #4caf50;
 	  --things-primary-text-color: #62707c;
+
 
 	  /* sidebar style */
 	  --things-small-icon:{
@@ -39,8 +42,57 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 	  	width:16px;height:16px;
 	  };
 
+
 	  /* form style */
+	  --things-search-fab:{
+	  	background-color:var(--things-focus-background-color);
+	  	width:50px;height:50px;
+	  	position:relative;
+	  	z-index:5;
+	  	float:right;
+	  	top:-15px;
+	  	margin-bottom:-45px;
+	  }
+	  --things-label:{
+	  	width:25%;
+	  	min-height:25px;
+	  	display:inline-block;
+	  	margin-bottom:10px;
+	  	padding-right:5px;
+	  	color:var(--things-primary-text-color);
+	  	font-size:13px;
+	  	text-align:right;
+	  	font-weight:100;
+	  }
+	  --things-input:{
+	  	width:65%;
+	  	margin-bottom:10px;
+	  	padding:3px 5px;
+	  	-webkit-border-radius:4px;
+	  	-moz-border-radius:4px;
+	  	border-radius:4px;
+	  	border:1px solid rgba(0,0,0,.1);
+	  	font-size:16px;
+	  }
+	  --things-picker-button:{
+	  	width:30px;height:25px;
+	  	display:inline-block;
+	  	margin-left:2px;
+	  	top:-2px;
+	  	-webkit-border-radius:3px;
+	  	-moz-border-radius:3px;
+	  	border-radius:3px;
+	  }
+
 
 	  /* button style */
+	  --things-header-button:{
+	  	width:40px;height:45px;
+	  	display:block;
+	  	border:none;
+	  	border-left:1px solid rgba(0,0,0,.1);
+	  }
+
+
 	}
 </style>
