@@ -17,6 +17,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   :root {
   	/* reset polymer style */
   	--paper-toolbar-background:transparent;
+  	--paper-toolbar-height:50px;
   	
 
   	/* common style */
@@ -162,6 +163,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 	  	min-width:initial;
 	  	padding:9px 20px 7px 20px;
 	  	font-size:13px;
+	  }
+	  --things-button-important:{
+	  	@apply(--things-button);
+	  	padding:7px 20px 5px 20px;
+	  	font-weight:700;
 	  }
 
 	}
