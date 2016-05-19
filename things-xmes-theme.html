@@ -19,7 +19,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   	/* reset polymer style */
   	--paper-toolbar-background:transparent;
   	--paper-toolbar-height:50px;
-  	
+  	--paper-input-container-underline:{
+  		background-color:rgba(0,0,0,.3);
+  	}
+  	--paper-input-container-underline-focus:{
+  		background-color:var(--things-secondary-background-color);
+  	}
+  	--paper-input-container-label-focus:{
+  		color:var(--things-secondary-background-color);
+  		font-weight:bold;
+  	}
 
   	/* common style */
 	  --border-radius-clear:{
@@ -249,6 +258,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 	  	min-width:initial;
 	  	padding:9px 20px 7px 20px;
 	  	font-size:13px;
+	  	color:#fff;
 	  }
 	  --things-button-important:{
 	  	@apply(--things-button);
