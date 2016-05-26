@@ -3,6 +3,16 @@
 
 <style is="custom-style">
 :root {
+	/* element reset style */
+	--paper-radio-button-size:10px;
+	--paper-radio-button-label-color: var(--things-primary-text-color);
+	--paper-radio-button-label-spacing:3px;
+	--paper-radio-button-checked-color: var(--things-green-text-color);
+  --paper-radio-button-checked-ink-color: var(--things-green-text-color);
+  --paper-radio-button-unchecked-color: var(--paper-blue-grey-300);
+  --paper-radio-button-unchecked-ink-color: var(--paper-blue-grey-300);
+
+
 	/* color style */
 	--things-primary-color: #4a5253;
 	--things-secondary-color: #4dc360;
@@ -28,6 +38,17 @@
 		width:270px;
 		min-width:270px;
 		background-color:var(--paper-blue-grey-50);
+	}
+	--things-properties-varialbe-panel:{
+		display: block;
+    max-width:253px;
+    min-width:253px;
+    background-color:rgba(255,255,255,.5);;
+    overflow:hidden;
+    margin:0 0 7px 7px;
+    padding:7px 0 0 0;
+    border:1px solid rgba(0,0,0,.2);
+    border-width:0 1px 1px 1px;
 	}
 
 
@@ -102,5 +123,33 @@
 		font-weight:300;
 		-webkit-appearance: none;
 	}
+	--things-input-color:{
+		position:relative;
+    margin-left:-30px;
+    width:25px;height:21px;
+    border:none;
+    padding:0;
+	}
+	--things-variable-ruletype-container:{
+		display: block;
+    width:94%;
+    overflow:hidden;
+    clear:both;
+    margin:-7px 0 7px 7px;
+    border:1px solid #ccc;
+	}
+	--things-record-action-button:{
+		background-color:rgba(0,0,0,.5);
+    border-radius:50%;
+    border:none;
+    margin:5px 0 0 4px;
+    width:15px;height:15px;
+    cursor:pointer;
+    color:#fff;
+    font-size:12px;
+    line-height:0;
+    text-indent:-2px;
+	}
+
 }
 </style>
