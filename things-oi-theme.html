@@ -2,5 +2,140 @@
 <script type="text/javascript" src="things-xmes-theme-grid.js"></script>
 <style is="custom-style">
 :root {
+	/* color style */
+  --things-primary-background-color: #1f4c70;
+  --things-secondary-background-color: #49a8df;
+  --things-focus-background-color: #4caf50;
+  --things-whitegrey-background-color:rgba(0, 0, 0, .05);
+  --things-lightgrey-background-color:rgba(0, 0, 0, .1);
+  --things-white-background-color:#fff;
+  --things-error-color:var(--paper-deep-orange-700);
+  --things-primary-text-color: #62707c;
+  --things-dark-text-color: #585858;
+  --things-sidebar-background-color:rgba(36,106,148,.08);
+
+
+  /* sidebar style */
+  --things-tiny-icon: {
+      padding: 0;
+      width: 12px;
+      height: 12px;
+  }
+  --things-small-icon: {
+      padding: 0;
+      width: 16px;
+      height: 16px;
+  }
+  --things-icon: {
+      padding: 0;
+      width: 19px;
+      height: 19px;
+  }
+
+
+  /* header style */
+  --things-oi-header:{
+  	height:45px;
+  	background-color:var(--things-primary-background-color);
+  }
+
+
+  /* form style */
+    --things-label: {
+        width: 25%;
+        min-height: 19px;
+        display: inline-block;
+        margin-bottom: 10px;
+        padding-right: 5px;
+        color: var(--things-primary-text-color);
+        font-size: 18px;
+        text-align: right;
+    }
+    --things-input: {
+        width: 65%;
+        margin-bottom: 10px;
+        padding: 3px 5px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, .2);
+        font-size: 20px;
+        font-weight: 300;
+    }
+    --things-picker-button: {
+        width: 35px;
+        height: 30px;
+        display: inline-block;
+        margin-left: 2px;
+        top: -2px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    --things-dropdown-item: {
+        min-height: 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        padding: 0 10px;
+        font-size: 13px;
+        color: var(--things-primary-text-color);
+    }
+    --things-dropdown-arrow: {
+        content: "";
+        position: absolute;
+        margin-top: -9px;
+        margin-left: -10px;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 7px solid rgba(0, 0, 0, .2);
+    }
+    --things-hint-arrow: {
+        content: "";
+        position: absolute;
+        margin-top: -7px;
+        margin-left: -10px;
+        margin-left: 5%;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 7px solid var(--things-error-color);
+    }
+    --things-hint: {
+        background-color: var(--things-error-color);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        position: absolute;
+        margin-top: -8px;
+        margin-left: 13%;
+        display: block;
+        padding: 1px 5px;
+        color: #fff;
+        font-size: 12px;
+        line-height: initial;
+    }
+    --things-header-label: {
+        width:initial;
+        min-height: 19px;
+        display: inline-block;
+        margin-top:14px;
+        padding-right: 5px;
+        color:rgba(255,255,255,.7);
+        font-size: 18px;
+        text-align:left;
+    }
+    --things-header-input: {
+        width:initial;
+        margin-top:5px;
+        padding: 3px 5px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, .2);
+        font-size: 20px;
+        font-weight: 300;
+    }
 }
 </style>
