@@ -37,6 +37,8 @@
   --things-oi-header:{
     height:45px;
     background-color:var(--things-primary-background-color);
+    padding:0 0 0 10px;
+    color:#fff;
   }
 
 
@@ -64,10 +66,10 @@
     }
     --things-picker-button: {
         width: 35px;
-        height: 30px;
+        height: 31px;
         display: inline-block;
         margin-left: 2px;
-        top: -2px;
+        top: -3px !important;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
@@ -138,12 +140,13 @@
         font-weight: 300;
     }
     --things-wip-routing:{
-      width:18%;
-      display:inline-block;
+      min-width:18%;
+      display:block;
       padding:0 10px;
       border-right:1px dotted #ccc;
       color:var(--things-primary-text-color);
       font-size:13px;
+      text-align:center;
     }
     --things-wip-routing-icon:{
       content:"";
@@ -156,6 +159,40 @@
       position:relative;
       width:20px;height:20px;
       left:100%;
+    }
+    --things-oi-search-form:{
+      background-color:var(--things-whitegrey-background-color);
+      padding:15px 15px 5px 15px;
+      border-bottom:1px solid var(--things-lightgrey-background-color);;
+    }
+
+    /* button style */
+    --things-header-button: {
+        width: 55px;
+        height: 45px;
+        display: block;
+        border: none;
+        border-left: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    --things-subtitle-icon: {
+        content:"";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        position: relative;
+        top: 1px;
+        border: 2px solid var(--things-focus-background-color);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        margin-right:4px;
+    }
+    --things-subtitle: {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: bold;
+        color: var(--things-primary-text-color);
     }
 }
 </style>
