@@ -1,6 +1,6 @@
 window.Things = window.Things || {};
 
-window.Things.THINGS_XMES_THEME = {
+window.Things.THINGS_XMES_THEME_STYLES = {
     "default": {
         "paddingTop": 6,
         "paddingBottom": 7,
@@ -23,7 +23,7 @@ window.Things.THINGS_XMES_THEME = {
         },
         "item": {
             "color": "#001",
-            "background" : "#dcf1ff",
+            "background": "#dcf1ff",
             "borderRight": "#3da1db"
         },
         "itemInner": {
@@ -47,7 +47,7 @@ window.Things.THINGS_XMES_THEME = {
         "hoveredBackground": null,
         "hoveredColor": "#49a8df",
         "fontSize": 11,
-        "fontBold" : true,
+        "fontBold": true,
 
         "group": {
             "background": "#d8eaf4",
@@ -89,12 +89,11 @@ window.Things.THINGS_XMES_THEME = {
             "background": "#4db1eb",
             "color": "#fff",
             "borderBottom": "#2083bd",
-            "borderTop": null,// "#ffffffff,1",
+            "borderTop": null, // "#ffffffff,1",
             "borderRight": "#ff85a8d0,1",
             "shapeColor": "#ff003f4f"
         },
-        "footer": {
-        },
+        "footer": {},
         "expander": {
             "borderRight": null
         },
@@ -154,7 +153,7 @@ window.Things.THINGS_XMES_THEME = {
             "paddingBottom": "1",
             "iconIndex": "0"
         },
-        "indent": {// ?
+        "indent": { // ?
             "background": "#d1e4f0",
             "borderRight": "#bedef3, 1",
             "borderBottom": "#ff0000, 0"
@@ -175,18 +174,18 @@ window.Things.THINGS_XMES_THEME = {
         "border": "#ff313539,1",
         "iconAlignment": "center",
         "contentFit": "auto",
-        "inactiveBackground": "#ffcc3300",// ?
+        "inactiveBackground": "#ffcc3300", // ?
         "iconOffset": "0",
         "selectionDisplay": "mask",
         "iconPadding": "0",
         "paddingBottom": "2",
         "paddingTop": "2",
         "paddingRight": "2",
-        "inactiveForeground": "#ff808080",// ?
+        "inactiveForeground": "#ff808080", // ?
         "textAlignment": "center",
         "lineAlignment": "center",
         "iconIndex": "0",
-        "state": {// ?
+        "state": { // ?
             "background": "#f8f8f8",
             "paddingRight": "2",
 
@@ -271,5 +270,35 @@ window.Things.THINGS_XMES_THEME = {
         "expander": {
             "borderRight": null
         }
+    },
+    "scrollBar": {
+        "background": "#1A000000",
+        "button": {
+            "shapeColor": "#66000000",
+            "shapeSelectedColor": "#49a8df"
+        },
+        "thumb": {
+            "background": "#33000000",
+            "hoveredBackground": "#49a8df",
+            "selectedBackground": "#49a8df"
+        }
     }
 };
+
+window.Things.THINGS_XMES_THEME_OPTIONS = {
+    vscrollBar: {
+        visible: true,
+        barWidth: 8,
+        barIndent: "header",
+        thumbSize: 10
+    },
+    hscrollBar: {
+        visible: true,
+        barWidth: 8,
+        barIndent: "fixed",
+        thumbWidth:10,
+    },
+    display: {
+            focusBorder: "#e64a19,1px"
+        }
+}
