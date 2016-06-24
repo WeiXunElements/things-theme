@@ -3,7 +3,7 @@
 
 <style is="custom-style">
 :root {
-/* element reset style */
+	/* element reset style */
 	--paper-radio-button-size:10px;
 	--paper-radio-button-label-color: var(--things-primary-text-color);
 	--paper-radio-button-label-spacing:3px;
@@ -11,11 +11,59 @@
   --paper-radio-button-checked-ink-color: var(--things-green-text-color);
   --paper-radio-button-unchecked-color: var(--paper-blue-grey-300);
   --paper-radio-button-unchecked-ink-color: var(--paper-blue-grey-300);
+  --paper-badge-background:rgba(0,0,0,.2);
+  --paper-badge-margin-left:-25px;
+
+
+  /* brand btn */
+  --things-brand:{
+  	background:var(--things-primary-color);
+    height:45px;min-height:45px;
+    padding-left:45px;
+    color:var(--things-white-color);
+    text-transform:capitalize;
+    font-size:20px;
+    line-height:2.5;
+  }
+  --things-brand-btn:{
+  	width:45px;height:45px;
+    min-width:initial;
+    margin:0;
+    padding:0;
+    position:fixed;
+    top:0;left:0;
+    z-index:1;
+    @apply(--border-radius-clear);
+  }
+
+	/* common style */
+	--border-radius-clear: {
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+	}
+
+	/* icon size */
+  --things-tiny-icon: {
+    padding: 0;
+    width: 12px;
+    height: 12px;
+  }
+  --things-small-icon: {
+    padding: 0;
+    width: 16px;
+    height: 16px;
+  }
+  --things-icon: {
+    padding: 0;
+    width: 19px;
+    height: 19px;
+  }
 
 
 	/* color style */
 	--things-primary-color: #4a5253;
-	--things-secondary-color: #4dc360;
+	--things-secondary-color: #40ba54;
 	--things-lightgrey-background-color:rgba(0,0,0,.15);
 	--things-white-color:#fff;
 	--things-error-color:var(--paper-deep-orange-700);
