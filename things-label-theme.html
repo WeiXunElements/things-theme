@@ -13,6 +13,7 @@
   --paper-radio-button-unchecked-ink-color: var(--paper-blue-grey-300);
   --paper-badge-background:rgba(0,0,0,.2);
   --paper-badge-margin-left:-25px;
+  --paper-fab-background:var(--things-secondary-color);
 
 
   /* brand btn */
@@ -93,6 +94,19 @@
 	--things-primary-text-color: #62707c;
 	--things-green-text-color: var(--paper-green-600);
 	--things-dark-text-color: #585858;
+
+
+	/* horizontal toolbar style */
+	--things-modeler-htoolbar:{
+		background-color:var(--things-primary-color);
+    color:rgba(255,255,255,.7);
+    padding-left:43px;
+	}
+	--things-modeler-label:{
+		margin-right:5px;
+		color:#fff;
+		font-size:20px;
+	}
 
 
 	/* vertical toolbar style */
@@ -371,5 +385,15 @@
       padding: 9px 20px 7px 20px;
       font-weight: 700;
   }
+  --things-search-fab: {
+    background-color: var(--things-focus-background-color);
+    width: 45px;
+    height: 45px;
+    position: relative;
+    z-index: 5;
+    float: right;
+    top: -25px;
+    margin-bottom: -45px;
+	}
 }
 </style>
