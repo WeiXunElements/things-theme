@@ -48,6 +48,7 @@ window.Things.THINGS_XMES_THEME_STYLES = {
         "hoveredColor": "#49a8df",
         "fontSize": 11,
         "fontBold": true,
+        "fontName": "arial",
 
         "group": {
             "background": "#d8eaf4",
@@ -162,8 +163,6 @@ window.Things.THINGS_XMES_THEME_STYLES = {
     "rowIndicator": {
         "background": "#0D000000",
         "color": "#666",
-        "selectedBackground": "#d8e7c4",
-        "selectedColor": "#ffffffff",
         "hoveredBackground": "#71cffa",
         "borderLeft": null,
         "borderRight": null,
@@ -238,7 +237,7 @@ window.Things.THINGS_XMES_THEME_STYLES = {
         "paddingTop": "2",
         "figureBackground": "#ff008e00",
         "paddingBottom": "2",
-        "iconIndex": "0",
+        "iconIndex": "1",
         "head": {
             "shapeInactiveColor": "#B349a8df",
             "shapeColor": "#1e495e",
