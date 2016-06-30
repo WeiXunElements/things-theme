@@ -10,21 +10,21 @@ window.Things.THINGS_XMES_THEME_STYLES = {
         "border": null
     },
     "groupPanel": {
-        "background": "#4db1eb",
+        "background": "#ffffff",
         "color": "#f0f0f0",
         "head": {
-            "borderRight": "#3da1db",
+            "borderRight": "#fff",
             "shapeColor": "#cccccc",
             "shapeHoveredColor": "#ffffff"
         },
         "headInner": {
             "borderRight": null,
-            "borderTop": null,
+            "borderTop": null
         },
         "item": {
             "color": "#001",
-            "background": "#dcf1ff",
-            "borderRight": "#3da1db"
+            "background": "#fff",
+            "borderRight": "#fff"
         },
         "itemInner": {
             "borderRight": "#fff"
@@ -43,7 +43,7 @@ window.Things.THINGS_XMES_THEME_STYLES = {
         "paddingTop": 3,
         "paddingBottom": 3,
         "selectedBackground": null,
-        "selectedColor": "#e64a19",
+        "selectedColor": "#78bf4c",
         "hoveredBackground": null,
         "hoveredColor": "#49a8df",
         "fontSize": 11,
@@ -87,7 +87,7 @@ window.Things.THINGS_XMES_THEME_STYLES = {
     },
     "rowGroup": {
         "header": {
-            "background": "#4db1eb",
+            "background": "#5f9fc4",
             "color": "#fff",
             "borderBottom": "#2083bd",
             "borderTop": null, // "#ffffffff,1",
@@ -298,6 +298,6 @@ window.Things.THINGS_XMES_THEME_OPTIONS = {
         thumbWidth:10,
     },
     display: {
-            focusBorder: "#e64a19,1px"
+            focusBorder: "#73c900,1px"
         }
 }
