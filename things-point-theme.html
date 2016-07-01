@@ -1,0 +1,407 @@
+<link rel="import" href="things-theme.html">
+
+
+<style is="custom-style">
+:root {
+	/* element reset style */
+	--paper-radio-button-size:10px;
+	--paper-radio-button-label-color: var(--things-primary-text-color);
+	--paper-radio-button-label-spacing:3px;
+	--paper-radio-button-checked-color: var(--things-green-text-color);
+  --paper-radio-button-checked-ink-color: var(--things-green-text-color);
+  --paper-radio-button-unchecked-color: var(--paper-blue-grey-300);
+  --paper-radio-button-unchecked-ink-color: var(--paper-blue-grey-300);
+  --paper-badge-background:rgba(0,0,0,.2);
+  --paper-badge-margin-left:-25px;
+  --paper-fab-background:var(--things-secondary-color);
+
+
+  /* brand btn */
+  --things-brand:{
+  	background:var(--things-primary-color);
+    height:45px;min-height:45px;
+    padding-left:45px;
+    color:var(--things-white-color);
+    text-transform:capitalize;
+    font-size:20px;
+    line-height:2.5;
+  }
+  --things-brand-btn:{
+  	width:45px;height:45px;
+    min-width:initial;
+    margin:0;
+    padding:0;
+    position:fixed;
+    top:0;left:0;
+    z-index:1;
+    @apply(--border-radius-clear);
+  }
+
+	/* common style */
+	--border-radius-clear: {
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+	}
+	--things-default-padding: {
+      padding: 15px;
+  }
+  --things-tight-padding: {
+      padding: 7px;
+  }
+  --things-loose-padding: {
+      padding: 30px;
+  }
+  --things-table-padding: {
+      padding: 15px 15px 0 15px;
+  }
+  --things-padding-clear: {
+      padding: 0
+  }
+  --things-default-margin: {
+      margin: 15px;
+  }
+  --things-margin-clear: {
+      margin: 0
+  }
+
+	/* icon size */
+  --things-tiny-icon: {
+    padding: 0;
+    width: 12px;
+    height: 12px;
+  }
+  --things-small-icon: {
+    padding: 0;
+    width: 16px;
+    height: 16px;
+  }
+  --things-icon: {
+    padding: 0;
+    width: 19px;
+    height: 19px;
+  }
+
+
+	/* color style */
+	--things-primary-color: #4a5253;
+	--things-secondary-color: #40ba54;
+	--things-primary-background-color: #4a5253;
+	--things-secondary-background-color: #40ba54;
+	--things-lightgrey-background-color:rgba(0,0,0,.15);
+	--things-white-color:#fff;
+	--things-error-color:var(--paper-deep-orange-700);
+	--things-primary-text-color: #62707c;
+	--things-green-text-color: var(--paper-green-600);
+	--things-dark-text-color: #585858;
+
+
+	/* horizontal toolbar style */
+	--things-modeler-htoolbar:{
+		background-color:var(--things-primary-color);
+    color:rgba(255,255,255,.7);
+    padding-left:43px;
+	}
+	--things-modeler-label:{
+		margin-right:5px;
+		color:#fff;
+		font-size:20px;
+	}
+
+
+	/* vertical toolbar style */
+	--things-vtoolbar-iconbtn:{
+		width:50px;height:50px;
+		min-width:50%;
+		border-bottom:1px solid rgba(0,0,0,.1);
+	}
+
+
+  /* preview style */
+  --things-preview-thumb:{
+    width:80%;height:75%;
+    min-width:640px;min-height:480px;
+    margin:auto;
+  }
+
+
+	/* properties panel style */
+	--things-properties-panel:{
+		display:block;
+		width:270px;
+		min-width:270px;
+		background-color:var(--paper-blue-grey-50);
+	}
+	--things-properties-varialbe-panel:{
+		display: block;
+    max-width:253px;
+    min-width:253px;
+    background-color:rgba(255,255,255,.5);;
+    overflow:hidden;
+    margin:0 0 7px 7px;
+    padding:7px 0 0 0;
+    border:1px solid rgba(0,0,0,.2);
+    border-width:0 1px 1px 1px;
+	}
+
+	/* info & timeline style */
+	--things-info-header:{
+		background-color:var(--things-primary-color);
+    padding:4px 0 0 50px;
+    height:41px;
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.2);
+	}
+	--things-info-header-btn:{
+		width:45px;height:45px;
+    padding:5px 10px;
+    border-right:1px solid rgba(0,0,0,.2);
+    color:#fff;
+    opacity:.6;
+	}
+	--things-info-header-textfield:{
+		background-color:rgba(0,0,0,.1);
+    margin-left:2px;
+    padding:1px 5px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    border:1px solid rgba(0,0,0,.1);
+    color:#fff;
+	}
+
+
+	/* profile style */
+  --things-profile-dialog: {
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      border-radius: 7px;
+      -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  --things-profile-img: {
+      background-color: #fff;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      margin-top: -60px;
+      margin-left: 28%;
+      border-radius: 50%;
+      border: 4px solid var(--things-secondary-background-color);
+      -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  --things-profile-logout: {
+      background-color: var(--things-secondary-background-color);
+      position: absolute;
+      margin: 9% 0 0 60%;
+      width: 23px;
+      height: 23px;
+      border: none;
+      padding: 0;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      color: #fff;
+  }
+
+
+  /* detail info */
+  --things-timecell-active:{
+  	background-color:#fff;
+  	margin-left:25px;
+  	-webkit-border-top-left-radius: 7px;
+  	-webkit-border-bottom-left-radius: 7px;
+		-moz-border-radius-topleft: 7px;
+		-moz-border-radius-bottomleft: 7px;
+		border-top-left-radius: 7px;
+		border-bottom-left-radius: 7px;
+		-webkit-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.1);
+		-moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.1);
+		box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.1);
+  }
+  --things-timecell-active-icon:{
+		content:"";
+		position: absolute;
+	 	left:35px;
+	 	top:5px;
+	 	width: 0;
+	 	height: 0;
+	 	border-top:9px solid transparent;
+	 	border-right:9px solid white;
+	 	border-bottom:9px solid transparent;
+	}
+  --things-timecell-seq:{
+		margin-left:30px;
+		margin-bottom:-5px;
+		display:block;
+		font-size:18px;
+		color:var(--paper-blue-grey-600);
+  }
+  --things-timecell-etc:{
+		margin-left:30px;
+    font-size:12px;
+    color:var(--paper-blue-grey-600);
+    opacity:.7
+  }
+
+
+	/* tab style */
+	--things-tabs:{
+		background-color:rgba(0,0,0,.08);
+		max-height:40px;
+	}
+	--paper-tabs-selection-bar-color:transparent;
+
+
+	/* form style */
+	--things-label:{
+		position:relative;
+		top:-3px;
+		width:25%;
+		min-height:20px;
+		display:inline-block;
+		margin-bottom:10px;
+		color:var(--things-primary-text-color);
+		font-size:12px;
+		text-align:right;
+		font-weight:100;
+		line-height:1.6;
+	}
+	--things-input:{
+		width:65%;
+		margin-bottom:10px;
+		padding:3px 5px 2px 5px;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		border-radius:4px;
+		border:1px solid rgba(0,0,0,.15);
+		font-size:15px;
+		font-weight:300;
+	}
+	--things-textarea:{
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		border-radius:4px;
+		border:1px solid rgba(0,0,0,.2);
+		font-size:13px;
+		color:var(--things-primary-text-color);
+	}
+	--things-fieldset:{
+		border:none;
+		margin:0;
+		padding:9px 0 0 0;
+		border-bottom:1px solid #cfd8dc;
+		color:var(--things-primary-text-color);
+		font-size:12px;
+	}
+	--paper-tabs:{
+		background-color:var(--paper-blue-grey-50);
+	}
+	--things-fieldset-legend:{
+		padding:9px 0 0 7px;
+		font-size:11px;
+		color:var(--things-green-text-color);
+		font-weight:bold;
+		text-transform:capitalize;
+	}
+	--things-select:{
+		max-width:69%;min-width:50%;
+		margin-bottom:10px;
+		padding:3px 20px 2px 5px;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		border-radius:4px;
+		border:1px solid rgba(0,0,0,.15);
+		font-size:15px;
+		font-weight:300;
+		-webkit-appearance: none;
+	}
+	--things-input-color:{
+		position:relative;
+    margin-left:-30px;
+    width:25px;height:21px;
+    border:none;
+    padding:0;
+	}
+	--things-variable-ruletype-container:{
+		display: block;
+    width:94%;
+    overflow:hidden;
+    clear:both;
+    margin:-7px 0 7px 7px;
+    border:1px solid #ccc;
+	}
+	--things-record-action-button:{
+		background-color:rgba(0,0,0,.5);
+    border-radius:50%;
+    border:none;
+    margin:5px 0 0 4px;
+    width:15px;height:15px;
+    cursor:pointer;
+    color:#fff;
+    font-size:12px;
+    line-height:0;
+    text-indent:-2px;
+	}
+	--things-label-card-container:{
+  	background-color:#fff;
+  	width:22.5%;
+  	margin:10px 1.4%;
+  	border-radius:4px;
+  	-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+  	-moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+  	box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+  }
+
+
+  /* login style */
+  --things-login: {
+  	background: #fff;
+  	width: 70%;
+  	margin: auto;
+  	margin-top: 12%;
+  	-webkit-border-radius: 7px;
+  	-moz-border-radius: 7px;
+  	border-radius: 7px;
+  }
+
+
+	/* button style */
+  --things-header-button: {
+      width: 45px;
+      height: 45px;
+      display: block;
+      border: none;
+      border-left: 1px solid rgba(0, 0, 0, .1);
+  }
+  --things-button: {
+      background-color: var(--paper-blue-grey-500);
+      min-width: initial;
+      max-height:31px;
+      padding: 9px 20px 7px 20px;
+      font-size: 13px;
+      color: #fff;
+  }
+  --things-button-important: {
+      @apply(--things-button);
+      background-color: var(--things-secondary-color);
+      max-height:31px;
+      padding: 9px 20px 7px 20px;
+      font-weight: 700;
+  }
+  --things-search-fab: {
+    background-color: var(--things-focus-background-color);
+    width: 45px;
+    height: 45px;
+    position: relative;
+    z-index: 5;
+    float: right;
+    top: -25px;
+    margin-bottom: -45px;
+	}
+}
+</style>
