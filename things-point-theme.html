@@ -4,13 +4,13 @@
 <style is="custom-style">
 :root {
 	/* element reset style */
-	--paper-radio-button-size:10px;
+	--paper-radio-button-size:12px;
 	--paper-radio-button-label-color: var(--things-primary-text-color);
 	--paper-radio-button-label-spacing:3px;
-	--paper-radio-button-checked-color: var(--things-green-text-color);
-  --paper-radio-button-checked-ink-color: var(--things-green-text-color);
-  --paper-radio-button-unchecked-color: var(--paper-blue-grey-300);
-  --paper-radio-button-unchecked-ink-color: var(--paper-blue-grey-300);
+	--paper-radio-button-checked-color: var(--things-secondary-color);
+  --paper-radio-button-checked-ink-color: var(--things-secondary-color);
+  --paper-radio-button-unchecked-color:#bdbdbd;
+  --paper-radio-button-unchecked-ink-color:#bdbdbd;
   --paper-badge-background:rgba(0,0,0,.2);
   --paper-badge-margin-left:-25px;
   --paper-fab-background:var(--things-secondary-color);
@@ -326,7 +326,7 @@
 	--things-fieldset-legend:{
 		padding:9px 0 0 7px;
 		font-size:11px;
-		color:#f2471c;
+		color:#e46c2e;
 		font-weight:bold;
 		text-transform:capitalize;
 	}
@@ -395,6 +395,14 @@
     display:inline-block;
     opacity:.7;
     border-bottom:2px solid #fff;
+  }
+  --things-properties-icon-only-label:{
+    width:30px;height:24px;
+    margin-top:2px;
+    margin-bottom:5px;
+  }
+  --things-editor-colorbar:{
+    border:1px solid #ccc;
   }
 
 
