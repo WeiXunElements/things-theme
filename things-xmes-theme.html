@@ -75,6 +75,7 @@
         font-weight: bold;
         color: var(--things-primary-text-color);
     }
+
     /* color style */
     --things-primary-background-color: #1f4c70;
     --things-secondary-background-color: #49a8df;
@@ -318,6 +319,32 @@
         -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
         -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
         box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+    }
+
+    --things-fab-text:{
+        position:absolute;
+        margin-top:18px;margin-left:-55px;
+        padding:2px 3px;
+        width:50px;
+        background-color:rgba(0,0,0,.5);
+        -moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;
+        color:#fff;
+        font-size:9px;
+        text-align:center;
+        -webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.2);
+    }
+
+    --things-fab-text-arrow:{
+        content:"";
+        position: absolute;
+        left: 100%;
+        top: 5px;
+        width: 0;
+        height: 0;
+        border-top: 3px solid transparent;border-left: 4px solid rgba(0,0,0,.5);
+        border-bottom: 3px solid transparent;
     }
 }
 </style>
