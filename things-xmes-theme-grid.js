@@ -35,7 +35,7 @@ window.Things.THINGS_XMES_THEME_STYLES = {
         "borderRight": null
     },
     "header": {
-        "background": null,
+        "background": 000000,
         "color": "#6d839a",
         "borderBottom": "#1A000000",
         "borderRight": null,
