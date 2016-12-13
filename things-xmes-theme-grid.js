@@ -35,7 +35,7 @@ window.Things.THINGS_XMES_THEME_STYLES = {
         "borderRight": null
     },
     "header": {
-        "background": 000000,
+        "background": "000000",
         "color": "#6d839a",
         "borderBottom": "#1A000000",
         "borderRight": null,
@@ -298,6 +298,6 @@ window.Things.THINGS_XMES_THEME_OPTIONS = {
         thumbWidth:10,
     },
     display: {
-            focusBorder: "#73c900,1px"
-        }
+        focusBorder: "#73c900,1px"
+    }
 }
