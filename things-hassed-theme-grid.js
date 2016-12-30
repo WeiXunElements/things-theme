@@ -2,8 +2,8 @@ window.Things = window.Things || {};
 
 window.Things.THINGS_XMES_THEME_STYLES = {
     "default": {
-        "paddingTop": 6,
-        "paddingBottom": 7,
+        "paddingTop": 5,
+        "paddingBottom": 5,
         "borderRight": null
     },
     "grid": {
@@ -36,16 +36,16 @@ window.Things.THINGS_XMES_THEME_STYLES = {
     },
     "header": {
         "background": "000000",
-        "color": "#6d839a",
+        "color": "#a08f7d",
         "borderBottom": "#1A000000",
         "borderRight": null,
         "borderTop": null,
         "paddingTop": 3,
         "paddingBottom": 3,
         "selectedBackground": null,
-        "selectedColor": "#78bf4c",
+        "selectedColor": "#a08f7d",
         "hoveredBackground": null,
-        "hoveredColor": "#49a8df",
+        "hoveredColor": "#e95d39",
         "fontSize": 11,
         "fontBold": true,
         "fontName": "arial",
@@ -161,9 +161,9 @@ window.Things.THINGS_XMES_THEME_STYLES = {
         }
     },
     "rowIndicator": {
-        "background": "#0D000000",
+        "background": "#f2eeeb",
         "color": "#666",
-        "hoveredBackground": "#71cffa",
+        "hoveredBackground": "#4da08f7d",
         "borderLeft": null,
         "borderRight": null,
         "borderBottom": "#1A000000,1",
@@ -198,7 +198,7 @@ window.Things.THINGS_XMES_THEME_STYLES = {
             "textAlignment": "center",
             "selectedBackground": "#ff696969",
             "lineAlignment": "center",
-            "inactiveBackground": "#ffd3d3d3",
+            "inactiveBackground": "#4da08f7d",
             "iconOffset": "0",
             "selectionDisplay": "mask",
             "hoveredMaskBorder": "#335292f7,1",
@@ -239,7 +239,7 @@ window.Things.THINGS_XMES_THEME_STYLES = {
         "paddingBottom": "2",
         "iconIndex": "1",
         "head": {
-            "shapeInactiveColor": "#B349a8df",
+            "shapeInactiveColor": "#a08f7d",
             "shapeColor": "#1e495e",
             "iconLocation": "leftSide",
             "border": "#ff000000,0",
@@ -263,7 +263,7 @@ window.Things.THINGS_XMES_THEME_STYLES = {
     },
     "selection": {
         "background": "#10000000",
-        "border": "#e64a19,1"
+        "border": "#e95d39,1"
     },
     "tree": {
         "expander": {
@@ -274,12 +274,12 @@ window.Things.THINGS_XMES_THEME_STYLES = {
         "background": "#1A000000",
         "button": {
             "shapeColor": "#66000000",
-            "shapeSelectedColor": "#49a8df"
+            "shapeSelectedColor": "#a08f7d"
         },
         "thumb": {
             "background": "#33000000",
-            "hoveredBackground": "#49a8df",
-            "selectedBackground": "#49a8df"
+            "hoveredBackground": "#a08f7d",
+            "selectedBackground": "#a08f7d"
         }
     }
 };
@@ -298,6 +298,6 @@ window.Things.THINGS_XMES_THEME_OPTIONS = {
         thumbWidth:10,
     },
     display: {
-        focusBorder: "#73c900,1px"
+        focusBorder: "#b29d86,1px"
     }
 }
