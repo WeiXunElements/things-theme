@@ -4,6 +4,48 @@
   <template>
     <style>
       :root {
+        /* reset polymer style */
+        --paper-toolbar-background: transparent;
+        --paper-toolbar-height: 50px;
+        --paper-input-container-underline: {
+            background-color: rgba(0, 0, 0, .3);
+        }
+        --paper-input-container-underline-focus: {
+            background-color: var(--things-secondary-background-color);
+        }
+        --paper-input-container-label-focus: {
+            color: var(--things-secondary-background-color);
+            font-weight: bold;
+        }
+        --paper-card-background-color:#fff;
+        
+        /* common style */
+        --border-radius-clear: {
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+        }
+        --things-default-padding: {
+            padding: 15px;
+        }
+        --things-tight-padding: {
+            padding: 7px;
+        }
+        --things-loose-padding: {
+            padding: 30px;
+        }
+        --things-table-padding: {
+            padding: 15px 15px 0 15px;
+        }
+        --things-padding-clear: {
+            padding: 0
+        }
+        --things-default-margin: {
+            margin: 15px;
+        }
+        --things-margin-clear: {
+            margin: 0
+        }
         /* color style */
         --things-primary-background-color: #1f4c70;
         --things-secondary-background-color: #49a8df;
@@ -17,7 +59,7 @@
         --things-sidebar-background-color:rgba(36,106,148,.08);
 
 
-      /* brand btn */
+        /* brand btn */
         --things-brand-btn:{
           width:45px;height:45px;
           min-width:initial;
@@ -29,12 +71,23 @@
           @apply(--border-radius-clear);
         }
 
-
-        /* common style */
-        --border-radius-clear: {
-          -webkit-border-radius: 0px;
-          -moz-border-radius: 0px;
-          border-radius: 0px;
+        --things-subtitle-icon: {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            position: relative;
+            top: 1px;
+            border: 2px solid var(--things-focus-background-color);
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            margin-right:4px;
+        }
+        --things-subtitle: {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: bold;
+            color: var(--things-primary-text-color);
         }
 
         /* sidebar style */
