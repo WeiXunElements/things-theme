@@ -1,5 +1,5 @@
 <link rel="import" href="things-theme.html">
-<script type="text/javascript" src="things-xmes-theme-grid.js"></script>
+
 <dom-module id="things-label-theme">
   <template>
     <style>
@@ -91,6 +91,7 @@
       --things-primary-color: #4a5253;
       --things-secondary-color: #40ba54;
       --things-primary-background-color: #4a5253;
+      --things-focus-background-color: #40ba54;
       --things-secondary-background-color: #40ba54;
       --things-lightgrey-background-color:rgba(0,0,0,.15);
       --things-white-color:#fff;
@@ -453,7 +454,6 @@
         float: right;
         top: -25px;
         margin-bottom: -45px;
-        padding:0 !important;
       }
       --things-fab-text:{
         position:absolute;
@@ -486,7 +486,7 @@
         margin-top:15px;padding: 2px 5px 2px 0;
         font-size: 12px;
         color: var(--things-primary-text-color);
-      }
+       }
       --things-login-button: {
         background-color: var(--things-focus-background-color);
         min-width: initial;
