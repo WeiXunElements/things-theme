@@ -2,6 +2,8 @@
 
 An element providing a starting point for your own reusable Polymer elements.
 
+<link rel="import" id="theme" href="../../bower_components/things-theme/things-hassed-theme.html">
+<style include="things-hassed-theme"></style>
 
 ## Dependencies
 
