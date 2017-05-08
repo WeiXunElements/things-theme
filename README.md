@@ -29,6 +29,7 @@ Styling:
 |things-oi-theme          |`<link rel="import" href="../things-theme/things-oi-theme.html">`            |
 |things-point-theme       |`<link rel="import" href="../things-theme/things-point-theme.html">`         |
 |things-xmes-theme        |`<link rel="import" href="../things-theme/things-xmes-theme.html">`          |
+|things-sms-theme         |`<link rel="import" href="../things-theme/things-sms-theme.html">`           |
 
 # things-xmes-theme
 
