@@ -9,7 +9,7 @@
                 background-color: rgba(0, 0, 0, .3);
             }
             --paper-input-container-underline-focus: {
-                background-color: var(--things-secondary-background-color);
+                background-color: var(--things-secondary-background-color) !important;
             }
             --paper-input-container-label-focus: {
                 color: var(--things-secondary-background-color);
@@ -292,12 +292,10 @@
             /* login style */
             --things-login: {
                 background: #fff;
-                width: 45%;
+                width:100%;height:85%;
                 margin: auto;
                 margin-top: 12%;
-                -webkit-border-radius: 7px;
-                -moz-border-radius: 7px;
-                border-radius: 7px;
+                box-shadow:none !important
             }
             
             /* button style */
@@ -360,27 +358,27 @@
             }
             --things-login-link-button: {
               background-color:transparent;
-              min-width: initial;
+              min-width:30%;
               max-height:31px;
-              margin-top:15px;padding: 2px 5px 2px 0;
+              margin-top:15px;padding:82% 5px 2px 0;
               font-size: 12px;
               color: var(--things-primary-text-color);
              }
             --things-login-button: {
               background-color: var(--things-focus-background-color);
-              min-width: initial;
+              max-height:initial;
               width:100%;
-              max-height:31px;
               margin-right:0;margin-left:0;
-              padding: 15px 20px 17px 20px;
+              padding: 12px 20px 7px 20px !important;
               font-size: 18px;
               color: #fff;
             }
-            --things-home-image-url : url(/images/bg-rail.png), url(/images/bg-blue.png), url(/images/bg-green.png);
-            --things-home-image-position: 50% 100%, 0 0, 100% 50%;
+            --things-home-image-url : url(/images/bg-rail.png);
+            --things-home-image-position: 50% 100%;
             --things-home-image:{
-              background-color: #f1f1f1;
+              background-color: #fff;
               background-repeat: no-repeat;
+              background-size:250%
             }
         }
     </style>
