@@ -1,6 +1,6 @@
 # things-theme
 
-### 각각 다른 성격의 theme를 작성하여 필요할시 import해줌
+### It is a component that creates different themes and imports them if necessary.
 
 Example:
 
@@ -37,8 +37,7 @@ An element providing a starting point for your own reusable Polymer elements.
 
 ## Dependencies
 
-Element dependencies are managed via [Bower](http://bower.io/). You can
-install that via:
+Element dependencies are managed via [Bower](http://bower.io/). You can install that via:
 
     npm install -g bower
 
@@ -60,8 +59,4 @@ And you can run it via:
     polymer serve
 
 Once running, you can preview your element at
-`http://localhost:8080/components/things-xmes-theme/`, where `things-xmes-theme` is the name of the directory containing it.
-
-
-## Example 1. Things XMES Theme
-`<things-xmes-theme>` Things XMES Theme
+`http://localhost:8080/components/things-theme/`, where `things-theme` is the name of the directory containing it.
