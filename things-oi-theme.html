@@ -68,3 +68,325 @@ Copyright © HatioLab Inc. All rights reserved.
         /* brand btn */
         --things-brand-btn:{
           width:45px;height:45px;
+          min-width:initial;
+          margin:0;
+          padding:0;
+          position:fixed;
+          top:0;left:0;
+          z-index:1;
+          @apply(--border-radius-clear);
+        }
+
+        --things-subtitle-icon: {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            position: relative;
+            top: 1px;
+            border: 2px solid var(--things-focus-background-color);
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            margin-right:4px;
+        }
+        --things-subtitle: {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: bold;
+            color: var(--things-primary-text-color);
+        }
+
+        /* sidebar style */
+        --things-tiny-icon: {
+            padding: 0;
+            width: 12px;
+            height: 12px;
+        }
+        --things-small-icon: {
+            padding: 0;
+            width: 16px;
+            height: 16px;
+        }
+        --things-icon: {
+            padding: 0;
+            width: 19px;
+            height: 19px;
+        }
+
+
+        /* header style */
+        --things-oi-header:{
+          height:45px;
+          background-color:#1f4c70;
+          padding:0 0 0 10px;
+          color:#fff;
+        }
+
+
+        /* form style */
+           --things-search-fab: {
+               background-color: var(--things-secondary-background-color);
+               width: 50px;
+               height: 50px;
+               position: relative;
+               z-index: 5;
+               float: right;
+               top: -25px;
+               margin-bottom: -45px;
+               padding:0 !important;
+           }
+          --things-label: {
+              width: 25%;
+              min-height: 19px;
+              display: inline-block;
+              margin-bottom: 10px;
+              padding-right: 5px;
+              color: var(--things-primary-text-color);
+              font-size: 18px;
+              text-align: right;
+          }
+          --things-input: {
+              width: 65%;
+              margin-bottom: 10px;
+              padding: 3px 5px;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              border-radius: 4px;
+              border: 1px solid rgba(0, 0, 0, .2);
+              font-size: 20px;
+              font-weight: 300;
+          }
+          --things-textarea-label-width: 25%;
+          --things-textarea-width : 100%;
+          --things-autogrow-textarea-width: 100%;
+          --things-textarea: {
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              border-radius: 4px;
+              border: 1px solid rgba(0, 0, 0, .2);
+              color: var(--things-primary-text-color);
+              font-size: 13px;
+              width: 100%;
+              height: 84%;
+              padding: 1%;
+          }
+          --things-picker-button: {
+              width: 35px;
+              height: 31px;
+              display: inline-block;
+              margin-left: 2px;
+              top: -3px !important;
+              -webkit-border-radius: 3px;
+              -moz-border-radius: 3px;
+              border-radius: 3px;
+          }
+          --things-dropdown-item: {
+              min-height: 30px;
+              border-bottom: 1px solid rgba(0, 0, 0, .1);
+              padding: 0 10px;
+              font-size: 13px;
+              color: var(--things-primary-text-color);
+          }
+          --things-dropdown-arrow: {
+              content: "";
+              position: absolute;
+              margin-top: -9px;
+              margin-left: -10px;
+              width: 0;
+              height: 0;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-bottom: 7px solid rgba(0, 0, 0, .2);
+          }
+          --things-hint-arrow: {
+              content: "";
+              position: absolute;
+              margin-top: -7px;
+              margin-left: -10px;
+              margin-left: 5%;
+              width: 0;
+              height: 0;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-bottom: 7px solid var(--things-error-color);
+          }
+          --things-hint: {
+              background-color: var(--things-error-color);
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              border-radius: 4px;
+              position: absolute;
+              margin-top: -8px;
+              margin-left: 13%;
+              display: block;
+              padding: 1px 5px;
+              color: #fff;
+              font-size: 12px;
+              line-height: initial;
+          }
+          --things-header-label: {
+              width:initial;
+              min-height: 19px;
+              display: inline-block;
+              margin-top:14px;
+              padding-right: 5px;
+              color:rgba(255,255,255,.7);
+              font-size: 18px;
+              text-align:left;
+          }
+          --things-header-input: {
+              width:initial;
+              margin-top:5px;
+              padding: 3px 5px;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              border-radius: 4px;
+              border: 1px solid rgba(0, 0, 0, .2);
+              font-size: 20px;
+              font-weight: 300;
+          }
+          --things-wip-routing:{
+            min-width:18%;
+            display:block;
+            padding:0 10px;
+            border-right:1px dotted #ccc;
+            color:var(--things-primary-text-color);
+            font-size:13px;
+            text-align:center;
+          }
+          --things-wip-routing-icon:{
+            content:"";
+            display:block;
+            margin:auto;
+            margin-bottom:5px;
+            width:70px;height:50px;
+          }
+          --things-wip-routing-arrow:{
+            position:relative;
+            width:20px;height:20px;
+            top:-60px;left:100%;
+            margin-bottom:-20px;
+          }
+          --things-oi-search-form:{
+            background-color:var(--things-whitegrey-background-color);
+            padding:15px 15px 5px 15px;
+            border-bottom:1px solid var(--things-lightgrey-background-color);;
+          }
+
+          /* profile style */
+          --things-profile-dialog: {
+              -webkit-border-radius: 7px;
+              -moz-border-radius: 7px;
+              border-radius: 7px;
+              -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+              -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+              box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+          }
+          --things-profile-img: {
+              background-color: #fff;
+              width: 100px;
+              height: 100px;
+              position: absolute;
+              margin-top: -60px;
+              margin-left: 35%;
+              border-radius: 50%;
+              border: 4px solid var(--things-secondary-background-color);
+              -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+              -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+              box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+          }
+          --things-profile-logout: {
+              background-color: var(--things-secondary-background-color);
+              position: absolute;
+              margin:7% 0 0 59%;
+              width: 23px;
+              height: 23px;
+              border: none;
+              padding: 0;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+              color: #fff;
+          }
+
+          /* button style */
+          --things-header-button: {
+              width: 55px;
+              height: 45px;
+              display: block;
+              border: none;
+              border-left: 1px solid rgba(0, 0, 0, .1);
+          }
+          --things-button: {
+              background-color: var(--paper-blue-grey-500);
+              min-width: initial;
+              max-height:31px;
+              padding: 9px 20px 7px 20px;
+              font-size: 13px;
+              color: #fff;
+          }
+          --things-button-important: {
+              @apply(--things-button);
+              background-color: var(--things-focus-background-color);
+              max-height:31px;
+              padding: 9px 20px 7px 20px;
+              font-weight: 700;
+          }
+
+          --things-subtitle-icon: {
+              content:"";
+              display: inline-block;
+              width: 8px;
+              height: 8px;
+              position: relative;
+              top: 1px;
+              border: 2px solid var(--things-focus-background-color);
+              -webkit-border-radius: 3px;
+              -moz-border-radius: 3px;
+              border-radius: 3px;
+              margin-right:4px;
+          }
+          --things-subtitle: {
+              display: inline-block;
+              font-size: 13px;
+              font-weight: bold;
+              color: var(--things-primary-text-color);
+          }
+          /* login style */
+          --things-login: {
+              background: #fff;
+              width: 70%;
+              margin: auto;
+              margin-top: 12%;
+              -webkit-border-radius: 7px;
+              -moz-border-radius: 7px;
+              border-radius: 7px;
+          }
+          --things-login-link-button: {
+            background-color:transparent;
+            min-width: initial;
+            max-height:31px;
+            margin-top:15px;padding: 2px 5px 2px 0;
+            font-size: 12px;
+            color: var(--things-primary-text-color);
+           }
+          --things-login-button: {
+            background-color: var(--things-focus-background-color);
+            min-width: initial;
+            width:100%;
+            max-height:31px;
+            margin-right:0;margin-left:0;
+            padding: 15px 20px 17px 20px;
+            font-size: 18px;
+            color: #fff;
+          }
+          --things-home-image-url : url(/images/bg-rail.png), url(/images/bg-blue.png), url(/images/bg-green.png);
+          --things-home-image-position: 50% 100%, 0 0, 100% 50%;
+          --things-home-image:{
+            background-color: #f1f1f1;
+            background-repeat: no-repeat;
+          }
+      }
+    </style>
+  </template>
+</dom-module>
