@@ -3,8 +3,8 @@
 Copyright © HatioLab Inc. All rights reserved.
 -->
 <link rel="import" href="things-theme.html">
-<script type="text/javascript" src="things-sms-theme-grid.js"></script>
-<dom-module id="things-sms-theme">
+<script type="text/javascript" src="things-mps-theme-grid.js"></script>
+<dom-module id="things-mps-theme">
   <template>
     <style>
         :root {
@@ -63,6 +63,11 @@ Copyright © HatioLab Inc. All rights reserved.
             --things-margin-clear: {
                 margin: 0
             }
+            --things-default-border-radius: {
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+            }
             --things-subtitle-icon: {
                 display: inline-block;
                 width: 8px;
@@ -70,9 +75,7 @@ Copyright © HatioLab Inc. All rights reserved.
                 position: relative;
                 top: 1px;
                 border: 2px solid var(--things-focus-background-color);
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                border-radius: 3px;
+                @apply(--things-default-border-radius);
                 margin-right:4px;
             }
             --things-subtitle: {
@@ -88,13 +91,14 @@ Copyright © HatioLab Inc. All rights reserved.
             --things-primary-color: #1f4c70;
             --things-secondary-color: #49a8df;
             --things-focus-background-color: #4caf50;
-            --things-whitegrey-background-color:rgba(0, 0, 0, .05);
+            --things-whitegrey-background-color:#0288ca;
             --things-lightgrey-background-color:rgba(0, 0, 0, .1);
             --things-white-background-color:#fff;
             --things-error-color:var(--paper-deep-orange-700);
             --things-primary-text-color: #62707c;
             --things-dark-text-color: #585858;
-            --things-sidebar-background-color:#555c6b;
+            --things-sidebar-text-color:#b3d2f6;
+            --things-sidebar-background-color:#2a3646;
 
 
             /* sidebar style */
@@ -153,9 +157,7 @@ Copyright © HatioLab Inc. All rights reserved.
                 width: 65%;
                 margin-bottom: 10px;
                 padding: 3px 5px;
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                border-radius: 4px;
+                @apply(--things-default-border-radius);
                 border: 1px solid rgba(0, 0, 0, .2);
                 font-size: 15px;
                 font-weight: 300;
@@ -173,9 +175,7 @@ Copyright © HatioLab Inc. All rights reserved.
             --things-textarea-width : 100%;
             --things-autogrow-textarea-width: 82%;
             --things-textarea: {
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                border-radius: 4px;
+                @apply(--things-default-border-radius);
                 border: 1px solid rgba(0, 0, 0, .2);
                 color: var(--things-primary-text-color);
                 font-size: 13px;
@@ -189,9 +189,7 @@ Copyright © HatioLab Inc. All rights reserved.
                 display: inline-block;
                 margin-left: 2px;
                 top: -2px;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                border-radius: 3px;
+                @apply(--things-default-border-radius);
             }
             --things-dropdown-item: {
                 min-height: 30px;
@@ -227,9 +225,7 @@ Copyright © HatioLab Inc. All rights reserved.
             }
             --things-hint: {
                 background-color: var(--things-error-color);
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                border-radius: 4px;
+                @apply(--things-default-border-radius);
                 position: absolute;
                 margin-top: -8px;
                 margin-left: 13%;
@@ -340,7 +336,7 @@ Copyright © HatioLab Inc. All rights reserved.
                 background-color:#fff;
                 width:22.5%;
                 margin:10px 1%;
-                border-radius:4px;
+                @apply(--things-default-border-radius);
                 -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
                 -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
                 box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
