@@ -4,7 +4,7 @@ Copyright © HatioLab Inc. All rights reserved.
 -->
 <link rel="import" href="things-theme.html">
 <script type="text/javascript" src="things-xmes-theme-grid.js"></script>
-<dom-module id="things-xmes-theme">
+<dom-module id="things-sms-theme">
   <template>
     <style>
         :root {
@@ -86,7 +86,7 @@ Copyright © HatioLab Inc. All rights reserved.
             --things-primary-background-color: #1f4c70;
             --things-secondary-background-color: #49a8df;
             --things-primary-color: #1f4c70;
-            --things-secondary-color: #1f4c70;
+            --things-secondary-color: #49a8df;
             --things-focus-background-color: #4caf50;
             --things-whitegrey-background-color:rgba(0, 0, 0, .05);
             --things-lightgrey-background-color:rgba(0, 0, 0, .1);
@@ -94,7 +94,7 @@ Copyright © HatioLab Inc. All rights reserved.
             --things-error-color:var(--paper-deep-orange-700);
             --things-primary-text-color: #62707c;
             --things-dark-text-color: #585858;
-            --things-sidebar-background-color:#707070;
+            --things-sidebar-background-color:#555c6b;
 
 
             /* sidebar style */
@@ -112,6 +112,11 @@ Copyright © HatioLab Inc. All rights reserved.
                 padding: 0;
                 width: 19px;
                 height: 19px;
+            }
+            --things-user-menu:{
+              background-color:#22a6dc;
+              padding:2px 5px;
+              font-size:14px;
             }
             /* list style */
             --things-dot-lightgrey: {
@@ -383,33 +388,6 @@ Copyright © HatioLab Inc. All rights reserved.
               padding: 15px 20px 17px 20px;
               font-size: 18px;
               color: #fff;
-            }
-            --things-calendar-title: {
-              padding:5px 0;
-              color:var(--things-focus-background-color);
-              text-align:center;
-              font-size:24px;
-            }
-            --things-calendar-button-bar: {
-                float:right;
-                margin-top:-37px;margin-right:10px;
-                background-color:#f4f4f4;
-                border:1px solid #ccc;
-                overflow:hidden;
-                -moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;
-            }
-            --things-calendar-buttons:{
-              display:block;
-              float:left;
-              min-width:initial;
-              margin:0px;padding:4px 10px;
-              max-height:27px;
-              border-left:1px solid #fff;border-right:1px solid #ccc;
-              -moz-border-radius:0;-webkit-border-radius:0;border-radius:0;
-              font-size:13px;
-            }
-            --things-calendar:{
-              padding:0 10px 10px 10px;
             }
             --things-home-image-url : url(/images/bg-rail.png), url(/images/bg-blue.png), url(/images/bg-green.png);
             --things-home-image-position: 50% 100%, 0 0, 100% 50%;
