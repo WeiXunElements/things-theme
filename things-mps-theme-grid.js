@@ -4,7 +4,8 @@ window.Things.THINGS_XMES_THEME_STYLES = {
     "default": {
         "paddingTop": 6,
         "paddingBottom": 7,
-        "borderRight": null
+        "borderRight": null,
+        "fontName": "cj-font"
     },
     "grid": {
         "border": null
